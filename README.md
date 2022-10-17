@@ -1,6 +1,10 @@
 # CAPP30239_FA22
 
-September 28, 2022
-I created this repository as directed by the Week 1 assignment for Data
-Visualization class.  I expect to use it to submit my coursework for grading
-throughout the quater.  
+## Content
+This repository is used store and view my work witin the CAPP Data Visualization course at the University of Chicago.  
+
+## Organization
+Each week classwork and assigned exercies will be stored seperate folders (week_#).  
+
+## Content
+In addition weekly classwork and exercies, this repository will store my final project focused on visualization of population median age per country.  

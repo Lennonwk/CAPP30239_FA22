@@ -14,3 +14,10 @@ Within this priamary data source, I intend to focus on median population age by 
 ### Thoughts on how you would hope to use this data
 Intend to generate a world map allowing a reader to quickly compare median ages through around the world.  I will also display the five countries with the largest change in median age 1990-2020 and illustrate greater detail on their population age demographics by decade.  
 
+## Bar Chart Exercise
+This exercise utilized data from the Chicgo Data Portal to create a bar chart showing the number of visits to public libraries near the University of Chicago in Jan 22.
+Utilized files:
+- homework.html
+- homework.js
+- library_visits_jan22.csv
+

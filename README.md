@@ -8,6 +8,6 @@ Each week classwork and assigned exercies will be stored seperate folders (week_
 
 - Week_02 - Data humanism and JavaScript
 
-- Week_03 - Introduction to D3 and corresponding visualization practice
+- Week_03 - Introduction to D3 and corresponding visualization practice with bar charts
 
-- Week_04 - Further exploration of D3 
+- Week_04 - Introduction to (multi-)line charts and area charts

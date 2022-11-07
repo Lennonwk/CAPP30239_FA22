@@ -1,0 +1,44 @@
+[
+    {
+      "attribute": "Race",
+      "values": [
+        {
+          "category": "White",
+          "amount": 751
+        },
+        {
+          "category": "Black",
+          "amount": 378
+        },
+        {
+          "category": "Hispanic",
+          "amount": 246
+        },
+        {
+          "category": "Other",
+          "amount": 152
+        }
+      ]
+    },
+    {
+      "attribute": "Armed",
+      "values": [
+        {
+          "category": "Gun",
+          "amount": 683
+        },
+        {
+          "category": "Knife",
+          "amount": 171
+        },
+        {
+          "category": "Unarmed",
+          "amount": 56
+        },
+        {
+          "category": "Unreported",
+          "amount": 533
+        }
+      ]
+    }
+  ]

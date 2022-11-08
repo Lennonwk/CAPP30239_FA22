@@ -1,9 +1,9 @@
-let height = 500,
-    width = 800,
-    margin = ({ top: 25, right: 30, bottom: 35, left: 30 })
-    innerWidth = width - margin.left - margin.right;
+//let height = 500,
+    //width = 800,
+   // margin = ({ top: 25, right: 30, bottom: 35, left: 30 })
+   let innerWidth = width - margin.left - margin.right;
 
-const svg = d3.select("#chart")
+const svg_1 = d3.select("#chart_multiline")
   .append("svg")
   .attr("viewBox", [0, 0, width, height]);
 
@@ -26,11 +26,11 @@ d3.csv("deaths_by_month_v2.csv").then(data => {
     .domain(d3.extent(data, d => d.Deaths))
     .range([height - margin.bottom, margin.top]);
 
-  svg.append("g")
+  svg_1.append("g")
     .attr("transform", `translate(0,${height - margin.bottom})`)
     .call(d3.axisBottom(x));
 
-  svg.append("g")
+  svg_1.append("g")
     .attr("transform", `translate(${margin.left},0)`)
     .call(d3.axisLeft(y).tickSize(-innerWidth).tickFormat(d => d ));
 
@@ -41,7 +41,7 @@ d3.csv("deaths_by_month_v2.csv").then(data => {
   for (let state of states) {
     let stateData = data.filter(d => d.State === state);
 
-    let g = svg.append("g")
+    let g = svg_1.append("g")
       .attr("class", "State")
       .on('mouseover', function () {
         d3.selectAll(".highlight").classed("highlight", false);
@@ -67,5 +67,12 @@ d3.csv("deaths_by_month_v2.csv").then(data => {
       .attr("dominant-baseline", "middle")
       .attr("fill", "#999");
   }
-  
+  svg_1.append("text")
+  .attr("class", "y-label")
+  .attr("text-anchor", "end")
+  .attr("x", -margin.top/2)
+  .attr("dx", "-0.5em")
+  .attr("y", 10)
+  .attr("transform", "rotate(-90)")
+  .text("Number of Deaths");
 });

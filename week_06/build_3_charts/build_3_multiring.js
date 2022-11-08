@@ -17,7 +17,7 @@ d3.json('armed.json').then((data) => {
   
     const arcLabel = d3.arc().innerRadius(labelRadius).outerRadius(labelRadius);
   
-    const svg = d3.select("#chart")
+    const svg = d3.select("#chart_multiring")
       .append("svg")
       .attr("width", width)
       .attr("height", height)

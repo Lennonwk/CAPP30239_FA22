@@ -8,8 +8,8 @@ const svg = d3.select("#chart_stackedbar")
 
 d3.csv("death_age_gender.csv").then( data => {
 
-let x = d3.scaleBand(data.map(d => (d.group)),[margin.left, width -  margin.right]) // the first value is the domain and the second value is the range
-.padding([0.2]); // we use data.map because this is categorical data.  padding is the space between the bars.  
+let x = d3.scaleBand(data.map(d => (d.group)),[margin.left, width -  margin.right]) 
+.padding([0.2]); 
 
 let y = d3.scaleLinear([0,450],[height - margin.bottom, margin.top]);
 
@@ -22,9 +22,9 @@ svg.append("g")
 .call(d3.axisLeft(y).tickSize(-width + margin.left + margin.right))
 
 //protein,carbs,fiber
-const subgroups = data.columns.slice(1); // slicing 1 removes the "group" column of the data
+const subgroups = data.columns.slice(1); 
 
-const color = d3.scaleOrdinal(subgroups,['#e41a1c','#377eb8']); // scaleOrdinal: passes the colors for each of the 2 groups.
+const color = d3.scaleOrdinal(subgroups,['#e41a1c','#377eb8']);
 
 const stackedData = d3.stack()
 .keys(subgroups)(data);
@@ -33,17 +33,17 @@ console.log(stackedData)
 svg.append("g")
 .selectAll("g")
 .data(stackedData)
-.join("g") // doing a data join
+.join("g")
 .attr("fill", d => color(d.key))
 .selectAll("rect")
-.data(d => d) // getting the d off of d, meaning we're nesting data
+.data(d => d)
 .join("rect")
 .attr("x", d => x(d.data.group))
 .attr("y", d => y(d[1]))
 .attr("height", d => y(d[0]) - y(d[1]))
 .attr("width",x.bandwidth());
 
-let legendGroup = svg // this is one way to do the legend
+let legendGroup = svg 
 .selectAll(".legend-group")
 .data(subgroups)
 .join("g")

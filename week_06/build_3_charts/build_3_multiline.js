@@ -1,7 +1,4 @@
-//let height = 500,
-    //width = 800,
-   // margin = ({ top: 25, right: 30, bottom: 35, left: 30 })
-   let innerWidth = width - margin.left - margin.right;
+let innerWidth = width - margin.left - margin.right;
 
 const svg_1 = d3.select("#chart_multiline")
   .append("svg")
@@ -58,7 +55,7 @@ d3.csv("deaths_by_month_v2.csv").then(data => {
       .attr("stroke", "#ccc")
       .attr("d", line)
 
-    let lastEntry = stateData[stateData.length - 2]; //last piece of data to position text x and y
+    let lastEntry = stateData[stateData.length - 2];
 
     g.append("text")
       .text(state)

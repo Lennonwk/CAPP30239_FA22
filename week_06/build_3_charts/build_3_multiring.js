@@ -4,7 +4,7 @@ d3.json('armed.json').then((data) => {
     }
   });
   
-  function createRing({ attribute, values }) { // destructuring in javascript.  
+  function createRing({ attribute, values }) {  
     const height = 250,
       width = 300,
       innerRadius = 40,

@@ -3,8 +3,8 @@
 const height = 600,
   width = 600,
   margin = 20,
-  innerRadius = (Math.min(width, height) / 2) - margin,
-  outerRadius = innerRadius + 6;
+  innerRadius = (Math.min(width, height) / 2) - margin, // similar to a donut chart
+  outerRadius = innerRadius + 6;  // similar to a donut chart
 
 const svg = d3.select("#chart")
   .append("svg")
@@ -19,15 +19,15 @@ d3.csv("../degrees.csv").then((data) => {
   for (let d of data) {
     d.value = +d.value;
   }
-
+console.log(data)
   // This code returns ["Males", "Females", "Associate", "Bachelors", "Masters", "Doctors"];
-  let arr1 = d3.map(data, d => d.source),
+  let arr1 = d3.map(data, d => d.source),  // loop through array, everywhere it says target, push that value into a new array, arr1.
     arr2 = d3.map(data, d => d.target);
   let names = arr1.concat(arr2);
+  console.log(arr1,arr2)
+  names = [...new Set(names)]; //spread syntax (...): 
 
-  names = [...new Set(names)]; //spread syntax
-
-  // This is an alternative way to do the same thing
+  // This is an alternative way to do the same thing (compresses things even more)
   // let names = [
   //   ...new Set(data.map(d => d.source)),
   //   ...new Set(data.map(d => d.target))
@@ -41,7 +41,7 @@ d3.csv("../degrees.csv").then((data) => {
     matrix[index.get(source)][index.get(target)] = value;
   }
 
-  const arc = d3.arc()
+  const arc = d3.arc() // builds text on the outsidee
     .innerRadius(innerRadius)
     .outerRadius(outerRadius);
 
@@ -56,53 +56,53 @@ d3.csv("../degrees.csv").then((data) => {
     .sortChords(d3.descending)(matrix);
 
   // console.log(chords) //radian system
-  // console.log(matrix)
+  console.log(matrix)
 
   const color = d3.scaleOrdinal(names, [d3.schemeTableau10[4], d3.schemeTableau10[6], "#333", "#333", "#333", "#333"]);
 
-  // svg.append("path")
-  //   .attr("id", "text-id")
-  //   .attr("fill", "none")
-  //   .attr("d", d3.arc()({ outerRadius, startAngle: 0, endAngle: 2 * Math.PI }));
+  svg.append("path")
+    .attr("id", "text-id")
+    .attr("fill", "none")
+    .attr("d", d3.arc()({ outerRadius, startAngle: 0, endAngle: 2 * Math.PI }));
 
-  // svg.append("g")
-  //   .selectAll("g")
-  //   .data(chords)
-  //   .join("path")
-  //   .attr("d", ribbon)
-  //   .attr("fill", d => color(names[d.source.index]))
-  //   .attr("fill-opacity", 0.75)
-  //   .style("mix-blend-mode", "multiply")
-  //   .on("mouseover", function() {
-  //     d3.select(this)
-  //       .attr("fill-opacity", 1);
-  //   })
-  //   .on("mouseout", function() {
-  //     d3.select(this)
-  //       .attr("fill-opacity", 0.75);
-  //   })
-  //   .on("click", function(e, d) {
-  //     let str = `${names[d.source.index]} earned 
-  //       ${d.source.value.toLocaleString()} ${names[d.target.index]} Degrees`;
-  //     d3.select("h2")
-  //       .html(str);
-  //   })
-  //   .append("title")
-  //   .text(d => `${names[d.source.index]} earned ${d.source.value.toLocaleString()} ${names[d.target.index]} Degrees`);
+  svg.append("g")
+    .selectAll("g")
+    .data(chords)
+    .join("path")
+    .attr("d", ribbon)
+    .attr("fill", d => color(names[d.source.index]))
+    .attr("fill-opacity", 0.75)
+    .style("mix-blend-mode", "multiply")
+    .on("mouseover", function() {
+      d3.select(this)
+        .attr("fill-opacity", 1);
+    })
+    .on("mouseout", function() {
+      d3.select(this)
+        .attr("fill-opacity", 0.75);
+    })
+    .on("click", function(e, d) {
+      let str = `${names[d.source.index]} earned 
+        ${d.source.value.toLocaleString()} ${names[d.target.index]} Degrees`;
+      d3.select("h2")
+        .html(str);
+    })
+    .append("title")
+    .text(d => `${names[d.source.index]} earned ${d.source.value.toLocaleString()} ${names[d.target.index]} Degrees`);
 
-  // svg.append("g")
-  //   .selectAll("g")
-  //   .data(chords.groups)
-  //   .join("g")
-  //   .call(g => g.append("path")
-  //     .attr("d", arc)
-  //     .attr("fill", d => color(names[d.index]))
-  //     .attr("stroke", "#fff"))
-  //   .call(g => g.append("text")
-  //     .attr("dy", -3)
-  //     .append("textPath")
-  //     .attr("href", "#text-id")
-  //     .attr("startOffset", d => d.startAngle * outerRadius)
-  //     .text(d => names[d.index]))
-  //     .attr("fill", d => color(names[d.index]) != "#ccc" ? color(names[d.index]) : "#666");
+  svg.append("g")
+    .selectAll("g")
+    .data(chords.groups)
+    .join("g")
+    .call(g => g.append("path")
+      .attr("d", arc)
+      .attr("fill", d => color(names[d.index]))
+      .attr("stroke", "#fff"))
+    .call(g => g.append("text")
+      .attr("dy", -3)
+      .append("textPath")
+      .attr("href", "#text-id")
+      .attr("startOffset", d => d.startAngle * outerRadius)
+      .text(d => names[d.index]))
+      .attr("fill", d => color(names[d.index]) != "#ccc" ? color(names[d.index]) : "#666");
 });

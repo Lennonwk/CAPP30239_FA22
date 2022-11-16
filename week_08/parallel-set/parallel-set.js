@@ -19,14 +19,14 @@ d3.csv("../degrees.csv").then((data) => {
   }
 
   let genders = [...new Set(data.map(d => d.source))]; //spread syntax
-  // console.log(genders);
+  console.log(genders);
 
   let graph = nodeLinkData(data, ["source", "target"]);
 
   console.log(graph, data);
 
   let sankey = d3.sankey()
-    // .nodeSort((a, b) => a.name.localeCompare(b.name))
+    .nodeSort((a, b) => a.name.localeCompare(b.name))
     .nodeWidth(nodeWidth)
     .nodePadding(nodePadding)
     .extent([
@@ -38,9 +38,9 @@ d3.csv("../degrees.csv").then((data) => {
     .range([d3.schemeTableau10[4], d3.schemeTableau10[6]])
     .domain(genders);
 
-  const { nodes, links } = sankey(graph); // modifies and returns graph
+  const { nodes, links } = sankey(graph); // modifies and returns graph (Called destructuring. Pulls apart the graph object)
 
-  svg.append("g")
+  svg.append("g") //builds out the nodes on the left and right vertical axis.  
     .selectAll("rect")
     .data(nodes)
     .join("rect")
@@ -51,7 +51,7 @@ d3.csv("../degrees.csv").then((data) => {
     .append("title")
     .text(d => d.name);
 
-  svg.append("g")
+  svg.append("g") // g is a grouping element
     .attr("fill", "none")
     .selectAll("g")
     .data(links)
@@ -70,7 +70,7 @@ d3.csv("../degrees.csv").then((data) => {
         .attr("opacity", 0.75);
     })
     .on("click", function(e, d) {
-      let str = `${d.source.name} earned ${d.source.value.toLocaleString()} ${d.target.name} Degrees`;
+      let str = `${d.source.name} earned ${d.source.value.toLocaleString()} ${d.target.name} Degrees`; // this is for the string describing what has been clicked on.  (Females earn more than...)
       d3.select("h2")
         .html(str);
     })

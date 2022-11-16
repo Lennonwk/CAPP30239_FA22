@@ -1,0 +1,119 @@
+---
+title: "CAPP 30239 Final Project Data Cleaning"
+author: 'Bill Lennon / CNETID: lennonwk'
+date: "10/30/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Worker to Retiree Ratio
+```{r}
+# Read in the original csv from the UN data portal
+worker_retiree_ratio <- read.csv("20_64_and_65plus_population_UN.csv")
+```
+
+
+
+```{r}
+# Remove unnecessary columns
+ worker_retiree_ratio<- worker_retiree_ratio[c(8, 12, 20, 27)]
+```
+
+```{r}
+# Rename columns
+colnames(worker_retiree_ratio) <- c('country','year','age_range','population')
+```
+
+```{r}
+# Remove rows that are not countries  myData[-c(2, 4, 6), ]
+#worker_retiree_ratio[-c(21477:26026, 47139:51324), ]
+worker_retiree_ratio <- worker_retiree_ratio[-(21477:25662), ]
+worker_retiree_ratio <- worker_retiree_ratio[-(42953:47138), ]
+```
+
+```{r}
+# Remove all rows that are not years 1990, 2020, or 2050
+test <- worker_retiree_ratio[worker_retiree_ratio$year == 1990 | 
+                               worker_retiree_ratio$year == 2020 |
+                               worker_retiree_ratio$year == 2050, ]
+# Remove all countrys that are not in the top 13 by GDP
+test_2 <- test[test$country == "United States of America" | test$country == "China" 
+               | test$country == "Japan" | test$country == "Germany" | 
+                 test$country == "India" | test$country == "United Kingdom" | 
+                 test$country == "France" | test$country == "Brazil" | 
+                 test$country == "Italy" | test$country == "Canada" | 
+                 test$country == "Russian Federation" | test$country == "Dem. People's Rep. of Korea" |
+                 test$country == "Australia", ]
+```
+
+```{r}
+# Remove duplicate 2050 rows
+test_3 <- test_2[-c(4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 
+                   68, 72, 76, 80, 84, 88, 92, 96, 100, 104), ]
+
+
+```
+
+
+```{r}
+write.csv(test_3, "worker_ratio_cleaned_v1.csv", row.names=FALSE, quote=FALSE)
+```
+
+Still Need to split the rows at the 20-64 / 65+ transition, do an outer (?) join
+and then create the ratio column by dividing the population columns.  
+
+# Fertility rate
+```{r}
+fertility_rate <- read.csv("country_fertility_rate_OECD.csv")
+```
+
+```{r}
+# Remove unnecessary columns
+ fertility_rate <- fertility_rate[c(1, 6, 7)]
+```
+
+```{r}
+# Rename columns
+colnames(fertility_rate) <- c('country','year','fertility_rate')
+```
+
+```{r}
+# Remove all rows that are not years 1970 or 2020
+fertility_rate <- fertility_rate[fertility_rate$year == 1970 | 
+                               fertility_rate$year == 2020, ]
+```
+
+```{r}
+write.csv(fertility_rate, "fertility_rate_cleaned_v1.csv", row.names=FALSE, quote=FALSE)
+```
+
+# Government Pension Cost
+```{r}
+pension_cost <- read.csv("gov_pension_costs_OECD.csv")
+```
+
+```{r}
+# Remove unnecessary columns
+ pension_cost <- pension_cost[c(1, 6, 7)]
+```
+
+```{r}
+# Rename columns
+colnames(pension_cost) <- c('country','year','percent_of_gdp')
+```
+```{r}
+# Remove all countrys that are not in the top 13 by GDP (China, India, Brazil Not in Data)
+pension_cost<- pension_cost[pension_cost$country == "USA" | 
+               pension_cost$country == "JPN" | 
+                pension_cost$country == "GBR" | pension_cost$country == "DEU" | 
+                 pension_cost$country == "FRA" | 
+                 pension_cost$country == "ITA" | pension_cost$country == "CAN" | 
+                 pension_cost$country == "RUS" | pension_cost$country == "KOR" |
+                 pension_cost$country == "AUS", ]
+```
+```{r}
+write.csv(pension_cost, "pension_costs_cleaned_v1.csv", row.names=FALSE, quote=FALSE)
+```
+There are duplicate rows for USA data that needs to be reomoved.  

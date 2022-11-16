@@ -1,0 +1,29 @@
+---
+title: "build_3_charts"
+author: 'Bill Lennon / CNETID: lennonwk'
+date: "11/5/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+install.packages("rjson")
+```
+
+```{r}
+library("rjson")
+# Give the input file name to the function.
+#myData <- fromJSON(file="data.json")
+police_shooting_data <- fromJSON(file="a3cleanedonly2015.json")
+#json_data_frame <- as.data.frame(myData)
+police_shooting_df <- as.data.frame(police_shooting_data)
+```
+
+```{r}
+# Read in the original json file
+police_shooting_df <- read.json("a3cleanedonly2015.json")
+```

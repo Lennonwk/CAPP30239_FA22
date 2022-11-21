@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+  <link rel="Datasets/stylesheet" href="styles.css">
+  <title>Pension Cost as Percent of GDP</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    a { color: #369;}
+
+    svg { width: 100%; }
+
+    text {
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    path.domain { display: none; }
+
+    line {
+      stroke: #eee;
+      stroke-dasharray: 1px;
+    }
+
+    .country { cursor: default; }
+    
+    .country path {
+      stroke-width: 1.5;
+      opacity: 0.75;
+    }
+
+    .highlight path {
+      stroke: indianred;
+      opacity: 1;
+    }
+
+    .highlight text { fill: indianred; }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Government Pension Cost As a Percentage of GDP</h1>
+    <p>
+        <a href="https://data.oecd.org/socialexp/pension-spending.htm">
+            OECD pension data</a> for the ten largest nominal GDP countries.  
+            (China, India, and Iran data unavailable)
+    </p>
+    <div id="pension_spending"></div>
+  </div>
+  <div class="container">
+    <h1>Worker to Retiree Ratio</h1>
+    <p> Caption for Viz #2</p>
+    <div id="worker_retiree_ratio"></div>
+  </div>
+</div>
+<div class="container">
+  <h2>Fertility Rate Change from 1970 to 2020</h1>
+  <p> Caption for Viz #3</p>
+  <div id="legend"></div>
+  <div id="fert_rate_change"></div>
+</div>
+</body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="libraries/d3-color-legend.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script src="pension_spending.js"></script>
+<script src="worker_retiree_ratio_v3.js"></script>
+<script src="fert_rate_change_v1.js"></script>
+
+</html>

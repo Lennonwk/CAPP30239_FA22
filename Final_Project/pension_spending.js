@@ -1,14 +1,13 @@
-let height = 500,
+const height = 500,
     width = 800,
     margin = ({ top: 25, right: 30, bottom: 35, left: 30 })
     innerWidth = width - margin.left - margin.right;
 
 const svg = d3.select("#pension_spending")
   .append("svg")
-  .attr("viewBox", [0, 0, width, height]);
+  .attr("viewBox", [-50, 0, width + 100, height]);
 
-d3.csv("Datasets/pension_cost_cleaned_final.csv").then(data => {
-  //let timeParse = d3.timeParse("%Y-%m");
+d3.csv("Datasets/pension_cost_cleaned_final_v2.csv").then(data => {
   let timeParse = d3.timeParse("%Y");
 
   let countries = new Set();
@@ -31,6 +30,16 @@ d3.csv("Datasets/pension_cost_cleaned_final.csv").then(data => {
     .attr("transform", `translate(0,${height - margin.bottom})`)
     .call(d3.axisBottom(x));
 
+    svg.append("text")
+    .attr("class", "y-label")
+    .attr("text-anchor", "end")
+    .attr("x", -margin_1.top/2)
+    .attr("dx", "-0.5em")
+    .attr("y", -5)
+    .attr("transform", "rotate(-90)")
+    .text("Pension Expenditure as a Percentage of National GDP")
+    .style("font-size", "12px");
+
   svg.append("g")
     .attr("transform", `translate(${margin.left},0)`)
     .call(d3.axisLeft(y).tickSize(-innerWidth).tickFormat(d => d + "%"));
@@ -40,7 +49,7 @@ d3.csv("Datasets/pension_cost_cleaned_final.csv").then(data => {
     .y(d => y(d.percent_of_gdp));
  
   for (let country of countries) {
-    let countryData = data.filter(d => d.country === country); //might cause a problem
+    let countryData = data.filter(d => d.country === country); 
 
     let g = svg.append("g")
       .attr("class", "country")
@@ -59,14 +68,16 @@ d3.csv("Datasets/pension_cost_cleaned_final.csv").then(data => {
       .attr("stroke", "#ccc")
       .attr("d", line)
 
-    let lastEntry = countryData[countryData.length - 1]; //last piece of data to position text x and y
+    let lastEntry = countryData[countryData.length - 1]; 
 
     g.append("text")
       .text(country)
       .attr("x", x(lastEntry.year) +3)
       .attr("y", y(lastEntry.percent_of_gdp))
       .attr("dominant-baseline", "middle")
-      .attr("fill", "#999");
+      .attr("fill", "#999")
+      .style("font-size", "10px");
+
   }
   
 });

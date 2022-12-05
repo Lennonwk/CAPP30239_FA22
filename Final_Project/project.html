@@ -5,89 +5,190 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
-  <link rel="Datasets/stylesheet" href="styles.css">
-  <title>Pension Cost as Percent of GDP</title>
-  <style>
-    * {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    #container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    a { color: #369;}
-
-    svg { width: 100%; }
-
-    text {
-      font-size: 10px;
-      text-transform: uppercase;
-    }
-
-    path.domain { display: none; }
-
-    line {
-      stroke: #eee;
-      stroke-dasharray: 1px;
-    }
-
-    .country { cursor: default; }
-    
-    .country path {
-      stroke-width: 1.5;
-      opacity: 0.75;
-    }
-
-    .highlight path {
-      stroke: indianred;
-      opacity: 1;
-    }
-
-    .highlight text { fill: indianred; }
-  </style>
+  <link rel="stylesheet" href="libraries/styles_v2.css">
+  <title>Final Project</title>
+  
 </head>
 
 <body>
   <div id="container">
-    <h1>Government Pension Cost As a Percentage of GDP</h1>
-    <p>
+    <h1>
+        <center>Who Will Pay for The Aging World?</center>
+    </h1>
+    <p id="p_header">
+        Additional Years Mean Additional Cost
+    </p>
+    <p>Significant advances in medicine and food production have 
+        contributed to more than doubling the world average life 
+        expectancy at birth since 1900.<sup>1</sup>  However, 
+        the financial burden of supporting senior citizens is an inconvenient 
+        consequence of rising life expectancy combined with a 
+        falling fertility rate.  Governments must acknowledge 
+        current social program cost trajectories and act now to 
+        manage citizens’ expectations of unsustainable entitlement 
+        benefits.  </p>
+    <p>Pension payments and government funded medical cost make 
+        senior citizens the most expensive individual demographic 
+        for national governments.  As the average life 
+        expectancy has increased, the average number of pension 
+        payments received over an individual’s lifetime has 
+        increased as well.  Additionally, researchers have 
+        estimated that 48.1% of an American’s lifetime healthcare 
+        cost occur after the age of 64.  During this period of life, 
+        Americans are more likely to receive government funded 
+        healthcare vice an individually or employer funded 
+        insurance policy.<sup>2</sup> The chart below shows that most
+        of the largest nations' pension costs have been slowly 
+        increasing during the last 30 years.  Researches expect this
+        increase to accelerate over the next 30 years as the percentage of 
+        retirement age people continues to grow.<sup>3</sup> 
+        Elected officials often fail to arrest ballooning cost of senior citizen
+        benefits due to fear of jeopardizing their reelection.  Senior citizens tend 
+        to have a disproportionate level of political influence due to 
+        higher voter participation and campaign contributions 
+        when compared to younger voters.
+       </p>
+
+    <p id="chart_title">
+        Government Pension Cost As A Percentage of GDP
+    </p>
+
+    <div id="pension_spending"></div>
+    <p id="data_source">
         <a href="https://data.oecd.org/socialexp/pension-spending.htm">
             OECD pension data</a> for the ten largest nominal GDP countries.  
             (China, India, and Iran data unavailable)
     </p>
-    <div id="pension_spending"></div>
-  </div>
-  <div class="container">
-    <h1>Worker to Retiree Ratio</h1>
-    <p> Workers are defined as all members of 
-        the population ages 20-64 and retirees are defined as all members <br> of 
-        the population ages 65+.  
-        <a href="https://population.un.org/wpp/">
-            Data</a> obtained from the UN Population Division.  
+    
+    <p id="p_header">
+        Doing More With Less
+    </p>
+    <p>The number of working age relative to retired people in
+        developed and developing countries has significantly 
+        declined over the last 30 years and the United Nations 
+        Population Division expects this trend to continue.  
+        The International Monetary Fund assesses that this 
+        demographic shift will result in the slowing of gross 
+        domestic product (GDP) growth.<sup>4</sup>  “Many empirical studies 
+        have found that GDP growth slows roughly one to one with 
+        declines in labor force and population growth – a 
+        disquieting prospect for both the United States and 
+        Europe."<sup>5</sup>   The decreased worker to retiree ratio will 
+        result in fewer income tax paying workers per retiree 
+        and the reduction in GDP growth will negatively impact 
+        corporate tax revenue.  All of these factors will 
+        exacerbate the rising pension costs as a percentage of 
+        GDP burdens on governments.</p>
+    <p id="chart_title">
+        Worker to Retiree Ratio
     </p>
     <div id="worker_retiree_ratio"></div>
-  </div>
-</div>
-<div class="container">
-  <h1>Fertility Rate Change from 1970 to 2020</h1>
-  <p> 
-        This indicator is measured in children per woman.
-        <a href="https://data.oecd.org/pop/fertility-rates.htm">Data</a>
-        obtained from The Organization for Economic Co-operation and 
-        Development.
-  </p>
-  <div id="legend"></div>
-  <div id="fert_rate_change"></div>
-</div>
+    <p id="data_source">
+        Workers are defined as all members of 
+        the population ages 20-64. <br>Retirees are defined as all members of 
+        the population ages 65+. <br> 
+        <a href="https://population.un.org/wpp/">
+            Data</a> obtained from the UN Population Division. (Iran data unavailable)
+    </p>
+    <p id="p_header">
+        Help Is NOT On the Way
+    </p>
+    <p>Countries should not expect the increase in 65+ year-olds 
+        to be balanced by an increase in young people. Fertility 
+        rates during the last 50 years have decreased for every 
+        country with Organization for Economic and Development 
+        Cooperation (OECD) recorded data.<sup>6</sup>  Researchers correlate 
+        the fertility rate decline with women gaining increased 
+        access to education, employment opportunities, and 
+        contraception.  This increased access is not expected 
+        to reverse course at the world level.  The OECD states that a
+        population requires a 2.1 fertility rate to remain stable.  The
+        chart below shows that nine of the ten largest economies in 
+        the world have a fertility rate of less than 2.0.  
+        </p>
+
+        <p id="chart_title">
+            2020 Fertility Rates
+        </p>
+    
+    <div id="fertility_rate_bar"></div>
+
+    <p id="data_source">
+        <a href="https://data.oecd.org/pop/fertility-rates.htm">OECD fertility rate data</a>
+        for the ten largest nominal GDP countries.  (Iran data unavailable)
+    </p>
+
+    <p id="p_header">
+        What Can Be Done?
+    </p>
+    <p>
+        National governments must act now to set realistic expectations 
+        for future retirees.  At the country level, governments that 
+        currently have some of the lowest worker to retiree ratios can 
+        liberalize immigration policies. However, this is a short-term, 
+        acute solution that does not address the long-term global issue. 
+        The unpopular solutions may involve raising the eligibility age 
+        of pension and social security entitlements or reducing benefits.  
+        These reductions in future spending should be paired with 
+        incentivizing individual retirement savings accounts or defined 
+        contribution plans for workers to build their own financial 
+        independence.  These policy changes will be unpopular with 
+        workers, but bad news does not get better with time.  
+        Necessary policy changes will only grow more drastic as policy 
+        makers delay action.   National governments should use Japan as 
+        a leading indicator of what’s to come.  “While Japan’s total 
+        population is projected to decrease by 11 million, the 
+        population age 65 and over is projected to increase by 8 
+        million between 2006 and 2030."<sup>7</sup>   Japan has already reached 
+        the less than two workers per retiree ratio that is projected for many 
+        countries by 2050.  Will Japan prove to be a model to emulate
+        or a cautionary tale?  
+    </p>
+    <hr>
+    <p id="p_header">
+        Process
+    </p>
+    <p>
+        The goal of my project is to inform readers about the effects of the declining birth rate around the world.  Reliable data starting in the mid 1900s and continuing with future projections were available for the United States and some Western European countries.  However, the historical data for many other countries was not available.  To address this limitation, I considered narrowing the focus of my article to only the United States but doing so would ignore countries on more dire financial trajectories along with the interconnectivity of national economies and potential immigration flows.
+    </p>
+    <p>
+        Therefore, I chose to use historical data starting in 1990 and limit countries represented to the ten largest economies to match the countries and dates for all three of my charts.  I accepted that fact that this reduced the significance of my “Government Pension Cost As A Percentage of GDP” chart because most of the countries shown have a small, potentially unremarkable, rise in pension cost over the limited timeframe.  
+    </p>
+    <p>
+        I selected a multi-line chart for the “Government Pension Cost As A Percentage of GDP” visualization because it’s an effective means of showing 26 data points for each of the seven countries and allows the reader to instantly identify trends over time.  I added a tooltip to embolden one selected country at a time to mitigate the confusing effect of numerous lines crossing each other throughout the chart.  
+    </p>
+    <p>
+        I chose to use a grouped bar chart for the “Worker to Retiree Ratio” visualization because it communicates to readers the significant changes in age demographics from 1990 to 2050 projections.  The ability to compare the side-by-side bars is more impactful than a multi-line chart for this data.  
+    </p>
+    <p>
+        I created a world choropleth visualization to color code the fertility rates of all countries but decided not to use it for two reasons.  First, there was a lack of reliable 1990 data for many countries resulting in large sections of my map being filled with grey (Data Unavailable).  Second, the map was interesting for a reader to compare fertility rates around the world, but also became a distraction from the point of the article.  Therefore, I choose to create a simple bar chart that displayed nine of the ten largest economies in the world have fertility rates below 2.1, the rate at which a population will remain stable without accounting for immigration.  
+    </p>
+    <p>
+        I attempted to maintain color, countries, and time periods consistent for all of the visualizations to aid the reader in quickly understanding the charts and compare countries across all three.  
+    </p>
+    <p>
+        I planned to wrap the text around the corresponding chart for each section of the article to allow the reader to quickly reference the chart while reading the text.  However, the “Government Pension Cost As A Percentage of GDP” and “Worker to Retiree Ratio” charts contain a significant amount of information and become difficult to read when reduced in size to appear side by side with text.  Therefore, I decided to use a vertically linear layout of text and charts accepting the limitation that readers will not be able to view more than one chart at a time on their screen.
+    </p>
+    <hr>
+    <p id="p_header">
+        References
+    </p>
+    <p id="foot_notes">
+        1. “A slow-burning fuse.” The Economist, August 14, 2018. <br>
+        2.  Alemayehu, Berhanu and Warner, Keneth E. “The Lifetime Distribution of Health Care Costs.” Health Services Research, doi: 10.1111/j.1475-6773.2004.00248.x, Jun 2004.<br>
+        3.  Lindert, Peter H. Making Social Spending Work. Cambridge University Press, 2021.<br>
+        4.  Lee, Ronald and Mason, Andrew. “Cost of Aging.” FINANCE & DEVELOPMENT, March 2017, Vol. 54, No. 1.<br>
+        5.  ibid<br>
+        6.  OECD (2022), Fertility rates (indicator). doi: 10.1787/8272fb01-en (Accessed on 03 December 2022.<br>
+        7.  “Why Population Aging Matters: A Global Perspective.” National Institute on Aging, National Institutes of Health, U.S. Department of Health and Human Services, Publication No. 07-6134, Mar 2007.
+    </p>
+ 
 </body>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="libraries/d3-color-legend.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
 <script src="pension_spending.js"></script>
 <script src="worker_retiree_ratio_v3.js"></script>
-<script src="fert_rate_change_v1.js"></script>
+<script src="fertility_rate_bar.js"></script>
 
 </html>

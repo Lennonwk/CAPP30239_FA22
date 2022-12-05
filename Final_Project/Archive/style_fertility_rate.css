@@ -1,0 +1,29 @@
+
+.past_rate {
+    fill: #bdd7e7;
+  }
+  
+  .dumbbell {
+    font-family: "Arial Black";
+    font-size: 12px;
+  }
+  
+  .current_rate {
+    fill: #3182bd;
+  }
+  
+  line.between {
+    stroke: #bdd7e7;
+    stroke-width: 6;
+  }
+  
+  line.before {
+    stroke: #0e668b;
+    stroke-width: 0.5;
+    stroke-dasharray: 1;
+  }
+  
+  .axis text {
+    font: 10px sans-serif;
+  }
+

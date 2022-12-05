@@ -2,8 +2,16 @@
     font-family: 'Work Sans',Arial, Helvetica, sans-serif;
   }
 
-  #container, .container {
-    max-width: 1040px;
+  #data_source {
+    text-align: center;
+    text-indent: 0px;
+    margin-top: 0;
+    color: grey;
+    font-size: 10px;
+}
+  
+  #container {
+    max-width: 800px;
     margin: 0 auto;
   }
 
@@ -13,6 +21,10 @@
     font-weight: 600;
   }
 
+  a { color: #369;}
+
+  svg { width: 100%; }
+  
   p {
     font-size: 16px;
     text-transform: none;
@@ -45,11 +57,19 @@
     visibility: hidden;
   }
 
-  #legend {
-    margin-top: 50px
-  }
+  .country { cursor: default; }
+    
+    .country path {
+      stroke-width: 1.5;
+      opacity: 0.75;
+    }
 
-  #legend svg {
-    margin: 0 auto;
-  }
+    .highlight path {
+      stroke: #08519c;
+      opacity: 1;
+    }
+
+    .highlight text { fill: #08519c; }
+
+    
   

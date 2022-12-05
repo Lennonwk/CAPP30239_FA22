@@ -1,0 +1,67 @@
+
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+    }
+
+    #container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    a { color: #369;}
+
+    svg { width: 100%; }
+
+    #p_header{
+        font-weight: bold;
+        text-indent: 0px;
+        line-height: 1;
+        font-size: 20px ;
+
+    }
+    
+    p {
+        text-indent: 25px;
+        font-size: 14px;
+    }
+
+    #chart_title {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    path.domain { display: none; }
+
+    line {
+      stroke: #eee;
+      stroke-dasharray: 1px;
+    }
+
+    .country { cursor: default; }
+    
+    .country path {
+      stroke-width: 1.5;
+      opacity: 0.75;
+    }
+
+    .highlight path {
+      stroke: #08519c;
+      opacity: 1;
+    }
+
+    .highlight text { fill: #08519c; }
+
+    #data_source {
+        text-align: right;
+        text-indent: 0px;
+        margin-top: 0;
+        color: grey;
+        font-size: 10px;
+    }
+
+    #foot_notes{
+        font-size: 10px;
+        text-indent: 0px;
+    }
+  

@@ -1,250 +1,250 @@
 country,code,id,rate_change
-Afghanistan,AFG,004,'Unreported'
-Åland Islands,ALA,248,'Unreported'
-Albania,ALB,008,'Unreported'
-Algeria,DZA,012,'Unreported'
-American Samoa,ASM,016,'Unreported'
-Andorra,AND,020,'Unreported'
-Angola,AGO,024,'Unreported'
-Anguilla,AIA,660,'Unreported'
-Antarctica,ATA,100,'Unreported'
-Antigua and Barbuda,ATG,28,'Unreported'
-Argentina,ARG,032,-0.9
-Armenia,ARM,051,'Unreported'
-Aruba,ABW,533,'Unreported'
-Australia,AUS,036,-1.3
-Austria,AUT,040,-0.9
-Azerbaijan,AZE,031,'Unreported'
-Bahamas,BHS,044,'Unreported'
-Bahrain,BHR,048,'Unreported'
-Bangladesh,BGD,050,'Unreported'
-Barbados,BRB,052,'Unreported'
-Belarus,BLR,112,'Unreported'
-Belgium,BEL,056,'Unreported'
-Belize,BLZ,084,-0.53
-Benin,BEN,204,'Unreported'
-Bermuda,BMU,060,'Unreported'
-Bhutan,BTN,064,'Unreported'
-Bolivia (Plurinational State of),BOL,068,'Unreported'
-"Bonaire, Sint Eustatius and Saba",BES,535,'Unreported'
-Bosnia and Herzegovina,BIH,070,'Unreported'
-Botswana,BWA,072,'Unreported'
-Bouvet Island,BVT,074,'Unreported'
-Brazil,BRA,076,-3.3
-British Indian Ocean Territory,IOT,086,'Unreported'
-Brunei Darussalam,BRN,096,'Unreported'
-Bulgaria,BGR,100,-0.6
-Burkina Faso,BFA,854,'Unreported'
-Burundi,BDI,108,'Unreported'
-Cabo Verde,CPV,132,'Unreported'
-Cambodia,KHM,116,'Unreported'
-Cameroon,CMR,120,'Unreported'
-Canada,CAN,124,-0.8
-Cayman Islands,CYM,136,'Unreported'
-Central African Republic,CAF,140,'Unreported'
-Chad,TCD,148,'Unreported'
-Chile,CHL,152,-2.12
-China,CHN,156,-4.0
-Christmas Island,CXR,162,'Unreported'
-Cocos (Keeling) Islands,CCK,166,'Unreported'
-Colombia,COL,170,-3.5
-Comoros,COM,174,'Unreported'
-Congo,COG,178,'Unreported'
-"Congo, Democratic Republic of the",COD,180,'Unreported'
-Cook Islands,COK,184,'Unreported'
-Costa Rica,CRI,188,-2.9
-Côte d'Ivoire,CIV,384,'Unreported'
-Croatia,HRV,191,-0.4
-Cuba,CUB,192,'Unreported'
-Curaçao,CUW,531,'Unreported'
-Cyprus,CYP,196,'Unreported'
-Czechia,CZE,203,-0.2
-Denmark,DNK,208,-0.3
-Djibouti,DJI,262,'Unreported'
-Dominica,DMA,212,'Unreported'
-Dominican Republic,DOM,214,'Unreported'
-Ecuador,ECU,218,'Unreported'
-Egypt,EGY,818,'Unreported'
-El Salvador,SLV,222,'Unreported'
-Equatorial Guinea,GNQ,226,'Unreported'
-Eritrea,ERI,232,'Unreported'
-Estonia,EST,233,-0.6
-Eswatini,SWZ,748,'Unreported'
-Ethiopia,ETH,231,'Unreported'
-Falkland Islands (Malvinas),FLK,238,
-Faroe Islands,FRO,234,'Unreported'
-Fiji,FJI,242,'Unreported'
-Finland,FIN,246,-0.5
-France,FRA,250,-0.7
-French Guiana,GUF,254,'Unreported'
-French Polynesia,PYF,258,'Unreported'
-French Southern Territories,ATF,260,'Unreported'
-Gabon,GAB,266,'Unreported'
-Gambia,GMB,270,'Unreported'
-Georgia,GEO,268,'Unreported'
-Germany,DEU,276,-0.5
-Ghana,GHA,288,'Unreported'
-Gibraltar,GIB,292,'Unreported'
-Greece,GRC,300,-1.1
-Greenland,GRL,304,'Unreported'
-Grenada,GRD,308,'Unreported'
-Guadeloupe,GLP,312,'Unreported'
-Guam,GUM,316,'Unreported'
-Guatemala,GTM,320,'Unreported'
-Guernsey,GGY,831,'Unreported'
-Guinea,GIN,324,'Unreported'
-Guinea-Bissau,GNB,624,'Unreported'
-Guyana,GUY,328,'Unreported'
-Haiti,HTI,332,'Unreported'
-Heard Island and McDonald Islands,HMD,334,'Unreported'
-Holy See,VAT,336,'Unreported'
-Honduras,HND,340,'Unreported'
-Hong Kong,HKG,344,'Unreported'
-Hungary,HUN,348,-0.4
-Iceland,ISL,352,-1.09
-India,IND,356,-3.4
-Indonesia,IDN,360,-3.2
-Iran (Islamic Republic of),IRN,364,'Unreported'
-Iraq,IRQ,368,'Unreported'
-Ireland,IRL,372,-2.2
-Isle of Man,IMN,833,'Unreported'
-Israel,ISR,376,-1.1
-Italy,ITA,380,-1.2
-Jamaica,JAM,388,'Unreported'
-Japan,JPN,392,-0.8
-Jersey,JEY,832,'Unreported'
-Jordan,JOR,400,'Unreported'
-Kazakhstan,KAZ,398,'Unreported'
-Kenya,KEN,404,'Unreported'
-Kiribati,KIR,296,'Unreported'
-Korea (Democratic People's Republic of),PRK,408,'Unreported'
-"Korea, Republic of",KOR,410,-3.7
-Kuwait,KWT,414,'Unreported'
-Kyrgyzstan,KGZ,417,'Unreported'
-Lao People's Democratic Republic,LAO,418,'Unreported'
-Latvia,LVA,428,LVA,-0.3
-Lebanon,LBN,422,'Unreported'
-Lesotho,LSO,426,'Unreported'
-Liberia,LBR,430,'Unreported'
-Libya,LBY,434,'Unreported'
-Liechtenstein,LIE,438,'Unreported'
-Lithuania,LTU,440,-0.7
-Luxembourg,LUX,442,-0.6
-Macao,MAC,446,'Unreported'
-Madagascar,MDG,450,'Unreported'
-Malawi,MWI,454,'Unreported'
-Malaysia,MYS,458,'Unreported'
-Maldives,MDV,462,'Unreported'
-Mali,MLI,466,'Unreported'
-Malta,MLT,470,'Unreported'
-Marshall Islands,MHL,584,'Unreported'
-Martinique,MTQ,474,'Unreported'
-Mauritania,MRT,478,'Unreported'
-Mauritius,MUS,480,'Unreported'
-Mayotte,MYT,175,'Unreported'
+Saudi Arabia,SAU,682,-5
 Mexico,MEX,484,-4.8
-Micronesia (Federated States of),FSM,583,'Unreported'
-"Moldova, Republic of",MDA,498,'Unreported'
-Monaco,MCO,492,'Unreported'
-Mongolia,MNG,496,'Unreported'
-Montenegro,MNE,499,'Unreported'
-Montserrat,MSR,500,'Unreported'
-Morocco,MAR,504,'Unreported'
-Mozambique,MOZ,508,'Unreported'
-Myanmar,MMR,104,'Unreported'
-Namibia,NAM,516,'Unreported'
-Nauru,NRU,520,'Unreported'
-Nepal,NPL,524,'Unreported'
-Netherlands,NLD,528,-1.0
-New Caledonia,NCL,540,'Unreported'
-New Zealand,NZL,554,-1.6
-Nicaragua,NIC,558,'Unreported'
-Niger,NER,562,'Unreported'
-Nigeria,NGA,566,'Unreported'
-Niue,NIU,570,'Unreported'
-Norfolk Island,NFK,574,'Unreported'
-North Macedonia,MKD,807,'Unreported'
-Northern Mariana Islands,MNP,580,'Unreported'
-Norway,NOR,578,-1.0
-Oman,OMN,512,'Unreported'
-Pakistan,PAK,586,'Unreported'
-Palau,PLW,585,'Unreported'
-"Palestine, State of",PSE,275,'Unreported'
-Panama,PAN,591,'Unreported'
-Papua New Guinea,PNG,598,'Unreported'
-Paraguay,PRY,600,'Unreported'
 Peru,PER,604,-4.1
-Philippines,PHL,608,'Unreported'
-Pitcairn,PCN,612,'Unreported'
-Poland,POL,616,-0.8200000000000003
-Portugal,PRT,620,-1.4300000000000002
-Puerto Rico,PRI,630,'Unreported'
-Qatar,QAT,634,'Unreported'
-Réunion,REU,638,'Unreported'
-Romania,ROU,642,'Unreported'
-Russian Federation,RUS,643,-0.2
-Rwanda,RWA,646,'Unreported'
-Saint Barthélemy,BLM,652,'Unreported'
-"Saint Helena, Ascension and Tristan da Cunha",SHN,654,'Unreported'
-Saint Kitts and Nevis,KNA,659,'Unreported'
-Saint Lucia,LCA,662,'Unreported'
-Saint Martin (French part),MAF,663,'Unreported'
-Saint Pierre and Miquelon,SPM,666,'Unreported'
-Saint Vincent and the Grenadines,VCT,670,'Unreported'
-Samoa,WSM,882,'Unreported'
-San Marino,SMR,674,'Unreported'
-Sao Tome and Principe,STP,678,'Unreported'
-Saudi Arabia,SAU,682,-5.0
-Senegal,SEN,686,'Unreported'
-Serbia,SRB,688,'Unreported'
-Seychelles,SYC,690,'Unreported'
-Sierra Leone,SLE,694,'Unreported'
-Singapore,SGP,702,'Unreported'
-Sint Maarten (Dutch part),SXM,534,'Unreported'
-Slovakia,SVK,703,-0.9
-Slovenia,SVN,705,-0.6
-Solomon Islands,SLB,090,'Unreported'
-Somalia,SOM,706,'Unreported'
+China,CHN,156,-4
+"Korea, Republic of",KOR,410,-3.7
+Colombia,COL,170,-3.5
+India,IND,356,-3.4
+Brazil,BRA,076,-3.3
 South Africa,ZAF,710,-3.3
-South Georgia and the South Sandwich Islands,SGS,239,'Unreported'
-South Sudan,SSD,728,'Unreported'
-Spain,ESP,724,-1.5
-Sri Lanka,LKA,144,'Unreported'
-Sudan,SDN,729,'Unreported'
-Suriname,SUR,740,'Unreported'
-Svalbard and Jan Mayen,SJM,744,'Unreported'
-Sweden,SWE,752,-0.3
-Switzerland,CHE,756,-0.6
-Syrian Arab Republic,SYR,760,'Unreported'
-"Taiwan, Province of China",TWN,158,'Unreported'
-Tajikistan,TJK,762,'Unreported'
-"Tanzania, United Republic of",TZA,834,'Unreported'
-Thailand,THA,764,'Unreported'
-Timor-Leste,TLS,626,'Unreported'
-Togo,TGO,768,'Unreported'
-Tokelau,TKL,772,'Unreported'
-Tonga,TON,776,'Unreported'
-Trinidad and Tobago,TTO,780,'Unreported'
-Tunisia,TUN,788,'Unreported'
+Indonesia,IDN,360,-3.2
 Turkey,TUR,792,-3.2
-Turkmenistan,TKM,795,'Unreported'
-Turks and Caicos Islands,TCA,796,'Unreported'
-Tuvalu,TUV,798,'Unreported'
-Uganda,UGA,800,'Unreported'
-Ukraine,UKR,804,'Unreported'
-United Arab Emirates,ARE,784,'Unreported'
+Costa Rica,CRI,188,-2.9
+Ireland,IRL,372,-2.2
+Chile,CHL,152,-2.12
+New Zealand,NZL,554,-1.6
+Spain,ESP,724,-1.5
+Portugal,PRT,620,-1.43
+Australia,AUS,036,-1.3
+Italy,ITA,380,-1.2
+Greece,GRC,300,-1.1
+Israel,ISR,376,-1.1
+Iceland,ISL,352,-1.09
+Netherlands,NLD,528,-1
+Norway,NOR,578,-1
+Argentina,ARG,032,-0.9
+Austria,AUT,040,-0.9
+Slovakia,SVK,703,-0.9
 United Kingdom of Great Britain and Northern Ireland,GBR,826,-0.9
+Poland,POL,616,-0.82
+Canada,CAN,124,-0.8
+Japan,JPN,392,-0.8
 United States of America,USA,840,-0.8
-United States Minor Outlying Islands,UMI,581,'Unreported'
-Uruguay,URY,858,'Unreported'
-Uzbekistan,UZB,860,'Unreported'
-Vanuatu,VUT,548,'Unreported'
-Venezuela (Bolivarian Republic of),VEN,862,'Unreported'
-Viet Nam,VNM,704,'Unreported'
-Virgin Islands (British),VGB,092,'Unreported'
-Virgin Islands (U.S.),VIR,850,'Unreported'
-Wallis and Futuna,WLF,876,'Unreported'
-Western Sahara,ESH,732,'Unreported'
-Yemen,YEM,887,'Unreported'
-Zambia,ZMB,894,'Unreported'
-Zimbabwe,ZWE,716,'Unreported'
+France,FRA,250,-0.7
+Lithuania,LTU,440,-0.7
+Bulgaria,BGR,100,-0.6
+Estonia,EST,233,-0.6
+Luxembourg,LUX,442,-0.6
+Slovenia,SVN,705,-0.6
+Switzerland,CHE,756,-0.6
+Belize,BLZ,084,-0.53
+Finland,FIN,246,-0.5
+Germany,DEU,276,-0.5
+Croatia,HRV,191,-0.4
+Hungary,HUN,348,-0.4
+Denmark,DNK,208,-0.3
+Latvia,LVA,428,-0.3
+Sweden,SWE,752,-0.3
+Czechia,CZE,203,-0.2
+Russian Federation,RUS,643,-0.2
+Antarctica,ATA,010,2
+Åland Islands,ALA,248,2
+Afghanistan,AFG,004,2
+Albania,ALB,008,2
+Algeria,DZA,012,2
+American Samoa,ASM,016,2
+Andorra,AND,020,2
+Angola,AGO,024,2
+Anguilla,AIA,660,2
+Antigua and Barbuda,ATG,028,2
+Armenia,ARM,051,2
+Aruba,ABW,533,2
+Azerbaijan,AZE,031,2
+Bahamas,BHS,044,2
+Bahrain,BHR,048,2
+Bangladesh,BGD,050,2
+Barbados,BRB,052,2
+Belarus,BLR,112,2
+Belgium,BEL,056,2
+Benin,BEN,204,2
+Bermuda,BMU,060,2
+Bhutan,BTN,064,2
+Bolivia (Plurinational State of),BOL,068,2
+"Bonaire, Sint Eustatius and Saba",BES,535,2
+Bosnia and Herzegovina,BIH,070,2
+Botswana,BWA,072,2
+Bouvet Island,BVT,074,2
+British Indian Ocean Territory,IOT,086,2
+Brunei Darussalam,BRN,096,2
+Burkina Faso,BFA,854,2
+Burundi,BDI,108,2
+Côte d'Ivoire,CIV,384,2
+Cabo Verde,CPV,132,2
+Cambodia,KHM,116,2
+Cameroon,CMR,120,2
+Cayman Islands,CYM,136,2
+Central African Republic,CAF,140,2
+Chad,TCD,148,2
+Christmas Island,CXR,162,2
+Cocos (Keeling) Islands,CCK,166,2
+Comoros,COM,174,2
+Congo,COG,178,2
+"Congo, Democratic Republic of the",COD,180,2
+Cook Islands,COK,184,2
+Cuba,CUB,192,2
+Curaçao,CUW,531,2
+Cyprus,CYP,196,2
+Djibouti,DJI,262,2
+Dominica,DMA,212,2
+Dominican Republic,DOM,214,2
+Ecuador,ECU,218,2
+Egypt,EGY,818,2
+El Salvador,SLV,222,2
+Equatorial Guinea,GNQ,226,2
+Eritrea,ERI,232,2
+Eswatini,SWZ,748,2
+Ethiopia,ETH,231,2
+Faroe Islands,FRO,234,2
+Fiji,FJI,242,2
+French Guiana,GUF,254,2
+French Polynesia,PYF,258,2
+French Southern Territories,ATF,260,2
+Gabon,GAB,266,2
+Gambia,GMB,270,2
+Georgia,GEO,268,2
+Ghana,GHA,288,2
+Gibraltar,GIB,292,2
+Greenland,GRL,304,2
+Grenada,GRD,308,2
+Guadeloupe,GLP,312,2
+Guam,GUM,316,2
+Guatemala,GTM,320,2
+Guernsey,GGY,831,2
+Guinea,GIN,324,2
+Guinea-Bissau,GNB,624,2
+Guyana,GUY,328,2
+Haiti,HTI,332,2
+Heard Island and McDonald Islands,HMD,334,2
+Holy See,VAT,336,2
+Honduras,HND,340,2
+Hong Kong,HKG,344,2
+Iran (Islamic Republic of),IRN,364,2
+Iraq,IRQ,368,2
+Isle of Man,IMN,833,2
+Jamaica,JAM,388,2
+Jersey,JEY,832,2
+Jordan,JOR,400,2
+Kazakhstan,KAZ,398,2
+Kenya,KEN,404,2
+Kiribati,KIR,296,2
+Korea (Democratic People's Republic of),PRK,408,2
+Kuwait,KWT,414,2
+Kyrgyzstan,KGZ,417,2
+Lao People's Democratic Republic,LAO,418,2
+Lebanon,LBN,422,2
+Lesotho,LSO,426,2
+Liberia,LBR,430,2
+Libya,LBY,434,2
+Liechtenstein,LIE,438,2
+Macao,MAC,446,2
+Madagascar,MDG,450,2
+Malawi,MWI,454,2
+Malaysia,MYS,458,2
+Maldives,MDV,462,2
+Mali,MLI,466,2
+Malta,MLT,470,2
+Marshall Islands,MHL,584,2
+Martinique,MTQ,474,2
+Mauritania,MRT,478,2
+Mauritius,MUS,480,2
+Mayotte,MYT,175,2
+Micronesia (Federated States of),FSM,583,2
+"Moldova, Republic of",MDA,498,2
+Monaco,MCO,492,2
+Mongolia,MNG,496,2
+Montenegro,MNE,499,2
+Montserrat,MSR,500,2
+Morocco,MAR,504,2
+Mozambique,MOZ,508,2
+Myanmar,MMR,104,2
+Namibia,NAM,516,2
+Nauru,NRU,520,2
+Nepal,NPL,524,2
+New Caledonia,NCL,540,2
+Nicaragua,NIC,558,2
+Niger,NER,562,2
+Nigeria,NGA,566,2
+Niue,NIU,570,2
+Norfolk Island,NFK,574,2
+North Macedonia,MKD,807,2
+Northern Mariana Islands,MNP,580,2
+Oman,OMN,512,2
+Pakistan,PAK,586,2
+Palau,PLW,585,2
+"Palestine, State of",PSE,275,2
+Panama,PAN,591,2
+Papua New Guinea,PNG,598,2
+Paraguay,PRY,600,2
+Philippines,PHL,608,2
+Pitcairn,PCN,612,2
+Puerto Rico,PRI,630,2
+Qatar,QAT,634,2
+Réunion,REU,638,2
+Romania,ROU,642,2
+Rwanda,RWA,646,2
+Saint Barthélemy,BLM,652,2
+"Saint Helena, Ascension and Tristan da Cunha",SHN,654,2
+Saint Kitts and Nevis,KNA,659,2
+Saint Lucia,LCA,662,2
+Saint Martin (French part),MAF,663,2
+Saint Pierre and Miquelon,SPM,666,2
+Saint Vincent and the Grenadines,VCT,670,2
+Samoa,WSM,882,2
+San Marino,SMR,674,2
+Sao Tome and Principe,STP,678,2
+Senegal,SEN,686,2
+Serbia,SRB,688,2
+Seychelles,SYC,690,2
+Sierra Leone,SLE,694,2
+Singapore,SGP,702,2
+Sint Maarten (Dutch part),SXM,534,2
+Solomon Islands,SLB,090,2
+Somalia,SOM,706,2
+South Georgia and the South Sandwich Islands,SGS,239,2
+South Sudan,SSD,728,2
+Sri Lanka,LKA,144,2
+Sudan,SDN,729,2
+Suriname,SUR,740,2
+Svalbard and Jan Mayen,SJM,744,2
+Syrian Arab Republic,SYR,760,2
+"Taiwan, Province of China",TWN,158,2
+Tajikistan,TJK,762,2
+"Tanzania, United Republic of",TZA,834,2
+Thailand,THA,764,2
+Timor-Leste,TLS,626,2
+Togo,TGO,768,2
+Tokelau,TKL,772,2
+Tonga,TON,776,2
+Trinidad and Tobago,TTO,780,2
+Tunisia,TUN,788,2
+Turkmenistan,TKM,795,2
+Turks and Caicos Islands,TCA,796,2
+Tuvalu,TUV,798,2
+Uganda,UGA,800,2
+Ukraine,UKR,804,2
+United Arab Emirates,ARE,784,2
+United States Minor Outlying Islands,UMI,581,2
+Uruguay,URY,858,2
+Uzbekistan,UZB,860,2
+Vanuatu,VUT,548,2
+Venezuela (Bolivarian Republic of),VEN,862,2
+Viet Nam,VNM,704,2
+Virgin Islands (British),VGB,092,2
+Virgin Islands (U.S.),VIR,850,2
+Wallis and Futuna,WLF,876,2
+Western Sahara,ESH,732,2
+Yemen,YEM,887,2
+Zambia,ZMB,894,2
+Zimbabwe,ZWE,716,2
+Falkland Islands (Malvinas),FLK,238,2

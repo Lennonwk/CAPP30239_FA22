@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cost of an Aging Population</title>
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">  This ids copy and pasted form the Google Fonts repository
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+    <link rel="Datasets/stylesheet" href="styles.css">
+    <style>
+        * {
+            /* font-family: 'Assistant', sans-serif; */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            max-width: 1000px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: normal;
+            align-items: normal;
+            align-content: normal;
+            column-gap: 40px;
+            margin: 60px 0px;
+        }
+        .flex-item {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 50%; 
+        }
+        .float-left { /* floats the text to wrap around the chart*/
+            float:left;
+            width: 50%;
+        }
+        .float-right { /* floats the text to wrap around the chart*/
+            float:right;
+            width: 75%;
+        }
+        text {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+        }
+        hr {
+            margin: 60px 0;
+        }
+        .chart p {
+            background: #eee;
+            padding: 5px 0px 5px 10px;
+            margin-right: 10px;
+        }
+        #monthChart .y-axis line {
+            stroke: #ccc;
+            stroke-dasharray: 2;
+        }
+
+        #monthChart .y-axis .domain {
+            display: none;
+        }
+        #divergingChart text {
+            font-size: 14px;
+        }
+        .country { cursor: default; }
+    
+        .country path {
+      stroke-width: 1.5;
+      opacity: 0.75;
+    }
+
+    #pension_spending .highlight path {
+      stroke: #08519c;
+      opacity: 1;
+    }
+
+    #pension_spending .highlight text { fill: #08519c; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Who Will Pay for The Aging World?
+        </h1>
+        <div class="float-container">
+            <!--<div class="flex-item">-->
+            <div id="pension_spending" class="float-right chart">
+            </div>
+                <h2>
+                    Additional Years Means Additional Cost
+                </h2>
+                <p>Significant advances in medicine and food production have 
+                    contributed to more than doubling the world average life 
+                    expectancy at birth since 1900.  However, an inconvenient 
+                    consequence of rising life expectancy combined with a 
+                    falling fertility rate is the financial burden of 
+                    supporting senior citizens.  Governments must acknowledge 
+                    current social program cost trajectories and act now to 
+                    manage citizens’ expectations of unsustainable entitlement 
+                    benefits.  </p>
+                <p>Pension payments and government funded medical cost make 
+                    senior citizens the most expensive individual demographic 
+                    for national governments.  Few countries have successfully 
+                    stabilized pension spending relative to output per 
+                    working-age person from since 1990.  Elected officials 
+                    jeopardize reelection if they attempt to reduce social 
+                    security types of assistance.  Senior citizens tend have 
+                    a disproportionate level of political influence due to 
+                    higher voter participation and campaign contributions 
+                    when compared to younger voters.  As the average life 
+                    expectancy has increased, the average number of pension 
+                    payments received over an individual’s lifetime has 
+                    increased as well.  Additionally, researchers have 
+                    estimated that 48.1% of an American’s lifetime healthcare 
+                    cost occur after the age of 64.  During this period of life, 
+                    Americans are more likely to receive government funded 
+                    healthcare vice an individually or employer funded 
+                    insurance policy.  </p>
+            </div>
+            
+            <!--<div id="pension_spending" class="flex-item chart">
+            </div>-->
+        </div>
+        <div class="flex-container">
+            <div id="worker_retiree_ratio" class="flex-item chart">
+
+                <h2> this is a test</h2>
+            </div>
+            <div class="flex-item">
+                <h2>
+                    Doing More with Less
+                </h2>
+                <p>The number of working age relative to retired people 
+                    developed and developing countries has significantly 
+                    declined over the last 30 years and this United Nations 
+                    Population Division expects this trend to continue.  
+                    The International Monetary Fund assesses that this 
+                    demographic shift will result in the slowing of gross 
+                    domestic product (GDP) growth .  “Many empirical studies 
+                    have found that GDP growth slows roughly one to one with 
+                    declines in labor force and population growth – a 
+                    disquieting prospect for both the United States and 
+                    Europe.”   The decreased worker to retiree ratio will 
+                    result in fewer income tax revenue sources per retiree 
+                    and the reduction in GDP growth will negatively impact 
+                    corporate tax revenue.  All of these factors will 
+                    exacerbate the rising pension costs as a percentage of 
+                    GDP burdens on governments.</p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>
+                    Help Is NOT On the Way
+                </h2>
+                <p>Countries should not expect the increase in 65+ year-olds 
+                    to be balanced by an increase in young people.  A 
+                    majority of the working age population (20-64) and all 
+                    of the retiree age population (65+) have already been 
+                    born and the math does not look promising.  Fertility 
+                    rates during the last 50 years have decreased for every 
+                    country with Organization for Economic and Development 
+                    Cooperation (OECD) recorded data .  Researchers correlate 
+                    the fertility rate decline to women gaining increased 
+                    access to education, employment opportunities, and 
+                    contraception.  This increased access is not expected 
+                    to reverse course at the world level.  </p>
+            </div>
+            <div id="" class="float-right chart"></div>
+        </div>
+        <!-- <hr> . -->
+        <div class="float-container">
+            <div id="fertility_rate_bar" class="float-left chart">
+            </div>
+            <h2>What Can Be Done?</h2>
+            <p>
+                National governments must act now to set realistic expectations 
+                for future retirees.  At the country level, governments that 
+                currently have some of the lowest worker to retiree ratios can 
+                liberalize immigration policies. However, this is a short-term 
+                acute solution that does not address the long-term global issue. 
+                The difficult decisions may involve raising the eligibility age 
+                of pension and social security entitlements or reducing benefits.  
+                These reductions in future spending can be paired with 
+                incentivizing individual retirement savings accounts or defined 
+                contribution plans for workers to build their own financial 
+                independence.  These policy changes will be unpopular with 
+                workers, but bad news does not get better with time.  
+                Necessary policy changes will only grow more drastic as policy 
+                makers delay action.   National governments should use Japan as 
+                a leading indicator of what’s to come.  “While Japan’s total 
+                population is projected to decrease by 11 million, the 
+                population age 65 and over is projected to increase by 8 
+                million between 2006 and 2030.”   Japan has already reached 
+                a 2.5 worker to retiree ratio that projected for America in 2050.  
+            </p>
+            
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="pension_spending.js"></script>
+    <script src="worker_retiree_ratio_v3.js"></script>
+    <script src="fertility_rate_bar.js"></script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>

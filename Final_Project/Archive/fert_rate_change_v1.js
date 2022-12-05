@@ -28,8 +28,9 @@ Promise.all([
   const path = d3.geoPath().projection(projection);
 
   const color = d3.scaleQuantize()
-    .domain([-5, 0]).nice()
-    .range(["#a50f15", "#de2d26", "#fb6a4a", "#fc9272", "#fcbba1", "#fee5d9"]);
+    .domain([-5, 1]).nice()
+    .range(["#99000d", "#cb181d", "#ef3b2c", "#fb6a4a", "#fc9272", "#fcbba1", "#636363"]);
+    //["",,,,,,,]
 
   //const path = d3.geoPath();
 
@@ -39,7 +40,7 @@ Promise.all([
       Legend(
         d3.scaleOrdinal(
           ["-5", "-4", "-3", "-2", "-1", "0", "Unreported"],
-          (["#a50f15", "#de2d26", "#fb6a4a", "#fc9272", "#fcbba1", "#fee5d9", "#636363"])
+          (["#99000d", "#cb181d", "#ef3b2c", "#fb6a4a", "#fc9272", "#fcbba1",  "#636363"])
         ),
         { title: "Fertility Rate Change from 1970 to 2020" }
       ));
@@ -54,10 +55,10 @@ Promise.all([
       let info = dataById[d.id];
       tooltip
         .style("visibility", "visible")
-        .html(`${info.country}<br>${info.rate_change}%`)
+        .html(`${info.country}<br>${info.rate_change}`)
         .style("top", (event.pageY - 10) + "px")
         .style("left", (event.pageX + 10) + "px");
-      d3.select(this).attr("fill", "goldenrod");
+      d3.select(this).attr("fill", "white");
     })
     .on("mouseout", function () {
       tooltip.style("visibility", "hidden");
